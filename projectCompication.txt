@@ -1,19 +1,1 @@
-https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies
 
-
-
-fromCurr.value.toLowerCase()[toCurr.value.toLowerCase()]
-
-
-
-
-const URL = `${base_url}/${fromCurr.value.toLowerCase()}.json`; ---> exchange rate nikal na leya apna choose kera hoa country code per
-  let response = await fetch(URL); ------->fetch ki request send kerna ka leya aur us response ko response(varibale) mai stor kerna ka leya
-  let data = await response.json();
-  console.log(data);
-  let rate = data[fromCurr.value.toLowerCase()][toCurr.value.toLowerCase()]; ---->data ka ander date or countrycode dono tha es leya phala square brace[]  ka andar ka code date and countrycode mai say kya choose kerna hai es leya
-                                                                                                                                     or second square brace[] different different ka code mai say kon sa choose kerna hai es leya hai
-  console.log(rate);
-
-
-  msg.innerText = '${amtval}';
